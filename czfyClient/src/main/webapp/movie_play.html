@@ -1,0 +1,142 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+  <head>
+    <base href="<%=basePath%>">
+    
+    <meta charset="utf-8">
+    <title>民俗视频</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"> 
+    <script src="js/jquery.js"></script>
+	<link rel='icon' href='css/img/favicon.ico' type='image/ico' />
+	<link rel="stylesheet" href="css/common.css">
+	<link rel="stylesheet" href="css/movie_play.css">
+	<link rel="stylesheet" type="text/css" href="css/jquery-ui.css">
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<script src="js/movie_play.js"></script>
+	<link rel="stylesheet" href="css/video-js.min.css">
+	<script src="js/video.min.js"></script>
+	<script src="js/common.js"></script>
+	<script src="js/bootstrap.js"></script>
+    <script type="text/javascript" src="js/jquery-ui.js"></script>
+    
+	<meta http-equiv="pragma" content="no-cache">
+	<meta http-equiv="cache-control" content="no-cache">
+	<meta http-equiv="expires" content="0">    
+	<meta http-equiv="keywords" content="keyword1,keyword2,keyword3">
+	<meta http-equiv="description" content="This is my page">
+	<!--
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	-->
+
+  </head>
+  
+  <body>
+   <div class="body">
+		
+		<div class="rightSide">
+			<div class="container-fluid">
+				<div class="row  header">
+					<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 title" >
+						<span class="p-title">标题</span>
+					</div>
+					<div class="col-lg-5 col-md-5 col-sm-5 col-xs-5"></div>
+					<div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 person">
+						<div class="avatar">
+							<img src="images/default.png">
+						</div>
+						<span class="name">
+							<a href="#" class="login">zjswh</a>
+							<a href="#" class="no_login">未登录</a>
+							<ul class="name_list">
+								<li class="pic">修改头像</li>
+								<li class="quit">退出</li>
+							</ul>
+						</span>
+						<img src="images/name_show.png">
+						
+					</div>
+				</div>
+				<div class="row video">
+					<div class="col-lg-1 col-md-1 col-sm-1 col-xs-1"></div>
+					<div class="col-lg-7 col-md-7 col-sm-7 col-xs-7 video_box" style="padding:0">
+						<video id="example_video1" class="video-js vjs-default-skin vjs-big-play-centered" controls preload="none"  height="500" data-setup="">
+						    <source src="" type='video/mp4' />
+						</video>
+
+					</div>
+					<div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 video_message">
+						<div class="author">
+							<img src="images/default.png" alt="">
+						</div>
+						<div class="data">
+							
+						</div>
+					</div>
+					<div class="col-lg-1 col-md-1 col-sm-1 col-xs-1"></div>
+				</div>
+				<hr class="hr">
+				<div class="row comment">
+					<div class="col-lg-1 col-md-1 col-sm-1 col-xs-1"></div>
+					<div class="col-lg-10 col-md-10 col-sm-10 col-xs-10 movie_comment_list">
+						<ul class="media-list">
+							<li class="media" data-click = "0">
+								<div class="media-left ">
+									<img src="images/ewm.jpg" class="media-object">
+								</div>
+								<div class="media-body">
+									<h4 class="media-heading"><span>企鹅</span>：汤显祖</h4>
+									<h5>
+										<span>17:56</span>
+										<img class="comment_show" src="images/movie/comment.png">
+									</h5>
+									<div class="comment_text">
+										<div class="comment_box" contenteditable="true"></div>
+										<div class="comment_btn">发表</div>
+									</div>
+								</div>
+							</li>
+						</ul>	
+					</div>
+					<div class="col-lg-1 col-md-1 col-sm-1 col-xs-1"></div>
+				</div>
+				<div class="row btn_list">
+				</div>
+				<div class="row movie_comment_list">
+					<div class="col-lg-1 col-md-1 col-sm-1 col-xs-1"></div>
+					<div class="col-lg-10 col-md-10 col-sm-10 col-xs-10">
+						<div class="movie_comment">
+							<div class="movie_box" contenteditable="true"></div>
+							<div class="movie_btn">发表</div>
+						</div>
+					</div>
+					<div class="col-lg-1 col-md-1 col-sm-1 col-xs-1"></div>
+				</div>
+				<div class="row  footer" style="padding:0">
+					<p>
+						風韻處州
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+    
+	
+	<div id="change_box">
+	    <p class="pic_title">选择图片
+	       <span title="关闭" id="close">X</span>
+	    </p>
+	    <div id="pic_container">
+	      <img src="images/default.png">
+	    </div>
+	    <div id="pic_form">
+	      <form id="content_form">
+	          <input type="hidden" name="textfiled" id="textfiled" />
+	          <input type="button" name="btn" class="button" value="浏览" id="btn" />
+	          <input type="file" name="file" class="file"  value="浏览"/>
+	          <input type="submit" value="上传" class="button" id="submit" />
+	     </form>
+	    </div>
+	</div>
+
+  </body>
+</html>

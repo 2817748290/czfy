@@ -1,0 +1,16 @@
+@CHARSET "UTF-8";
+.body{min-height: 644px;}
+.rightSide{float: left;background:url(../images/bg6.jpg) no-repeat;z-index: -8;}
+.rightSide .header{background:none;height:80px;margin-top:20px;}
+.rightSide .center .title{height:30px;font-size:20px;font-weight: 600;margin-bottom:20px;cursor: pointer;}
+.rightSide .center .title img{margin-left:60px;}
+.rightSide .form{position: relative;}
+.rightSide .form img{opacity: 0.8;width: 100%;position: absolute;z-index: 0;}
+.rightSide .form .mess,.rightSide .form .mess_change{position: absolute;left:12%;top:80px;}
+.rightSide .form .mess label{width:60px;}
+.rightSide .form .mess label.intro{width:80px;}
+.rightSide .form .mess span{width: 200px;display: inline-block;}
+.rightSide .form .mess_change{display: none;}
+.rightSide .form .mess_change #intro{width:300px;}
+.rightSide .form .mess_change .submit{width: 150px;height:30px;line-height: 30px;text-indent: center;}
+.rightSide .other_mess{text-indent:20px;font-size:15px;height: 25px;line-height: 25px;font-family: '微软雅黑';}

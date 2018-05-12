@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Flat Admin V.2 - Free Bootstrap Admin Templates</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Fonts -->
+    <link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:300,400' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,900' rel='stylesheet' type='text/css'>
+    <!-- CSS Libs -->
+    <link rel="stylesheet" type="text/css" href="../lib/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="../lib/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="../lib/css/animate.min.css">
+    <link rel="stylesheet" type="text/css" href="../lib/css/bootstrap-switch.min.css">
+    <link rel="stylesheet" type="text/css" href="../lib/css/checkbox3.min.css">
+    <link rel="stylesheet" type="text/css" href="../lib/css/jquery.dataTables.min.css">
+    <link rel="stylesheet" type="text/css" href="../lib/css/dataTables.bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="../lib/css/select2.min.css">
+    <!-- CSS App -->
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <link rel="stylesheet" type="text/css" href="../css/themes/flat-blue.css">
+
+</head>
+
+<body class="flat-blue">
+    <div class="app-container">
+        <div class="row content-container">
+           <!-- top -->
+            <nav class="navbar navbar-default navbar-fixed-top navbar-top">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-expand-toggle">
+                            <i class="fa fa-bars icon"></i>
+                        </button>
+                        <ol class="breadcrumb navbar-breadcrumb">
+                            <li class="active">艺术新闻</li>
+                        </ol>
+                        <button type="button" class="navbar-right-expand-toggle pull-right visible-xs">
+                            <i class="fa fa-th icon"></i>
+                        </button>
+                    </div>
+                    <ul class="nav navbar-nav navbar-right">
+                        <button type="button" class="navbar-right-expand-toggle pull-right visible-xs">
+                            <i class="fa fa-times icon"></i>
+                        </button>
+                        <li class="dropdown">
+                            <a href="/new/html/contribute.html" target="view_window" id="tougao" class="dropdown-toggle">投稿</a>
+                            <ul class="dropdown-menu animated fadeInDown">
+                                <!-- <li class="title">
+                                    Notification <span class="badge pull-right">0</span>
+                                </li> -->
+                                <!-- <li class="message">
+                                    No new notification
+                                </li> --> 
+                            </ul>
+                        </li>
+                        <li class="dropdown profile">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">用户信息<span class="caret"></span></a>
+                            <ul class="dropdown-menu animated fadeInDown">
+                                <li class="profile-img">
+                                    <img src="../img/profile/picjumbo.com_HNCK4153_resize.jpg" class="profile-img">
+                                </li>
+                                <li>
+                                    <div class="profile-info">
+                                        <!--<h4 class="username">Emily Hart</h4>-->
+                                        <!--<p>emily_hart@email.com</p> -->
+                                        <!--<div class="btn-group margin-bottom-2x" role="group">-->
+                                            <!--<button type="button" class="btn btn-default"><i class="fa fa-user"></i> Profile</button>-->
+                                            <!--<button type="button" class="btn btn-default"><i class="fa fa-sign-out"></i> Logout</button>-->
+                                        <!--</div>-->
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+
+            <!-- right -->
+            <div class="side-menu sidebar-inverse">
+                <nav class="navbar navbar-default" role="navigation">
+                    <div class="side-menu-container">
+                        <div class="navbar-header">
+                            <a class="navbar-brand" href="#">
+                                <div class="icon fa fa-paper-plane"></div>
+                                <div class="title">请选择你想了解的类别</div>
+                            </a>
+                            <button type="button" class="navbar-expand-toggle pull-right visible-xs">
+                                <i class="fa fa-times icon"></i>
+                            </button>
+                        </div>
+                        <ul class="nav navbar-nav">
+                            <li class="active">
+                                <a href="xinwen.html?classification=1">
+                                     <span class="icon fa fa-tachometer"></span>
+                                   <span class="title">民间文学</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="xinwen.html?classification=2">
+                                     <span class="icon fa fa-desktop"></span><span class="title">民间戏剧</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="xinwen.html?classification=3">
+                                    <span class="icon fa fa-table"></span><span class="title">民间曲艺</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="xinwen.html?classification=4">
+                                    <span class="icon fa fa-file-text-o"></span><span class="title">民间音乐</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="xinwen.html?classification=5">
+                                    <span class="icon fa fa-cubes"></span><span class="title">民间工艺美术</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="xinwen.html?classification=6">
+                                    <span class="icon fa fa-slack"></span><span class="title">民间舞蹈与杂技</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="xinwen.html?classification=7">
+                                    <span class="icon fa fa-thumbs-o-up"></span><span class="title">民间建筑艺术</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    /.navbar-collapse
+                </nav>
+            </div>
+        
+            Main Content
+            <div class="container-fluid">
+                <div class="side-body">
+            
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <div class="card">
+                                <div class="card-header">
+                                </div>
+                                <div class="card-body">
+                                    <table class="datatable table table-striped" cellspacing="0" width="100%">
+                                        <thead>
+                                            <tr id="inforList">
+                                                <th id="inforTitle"width="55%">名称</th>
+                                                <th id="inforContent"width="15%">作者</th>
+                                                <th id="inforDate"width="20%">发表时间</th>
+                                                <th id="inforId" width="6%">点击查看</th>
+                                            </tr>
+                                        </thead>
+                                        <tfoot>
+                                            <tr>
+                                                <th>inforTitle</th>
+                                                <th>inforContent</th>
+                                                <th>InforDate</th>
+                                                <th>inforId</th>
+                                            </tr>
+                                        </tfoot>
+                                        <tbody id="tbody">
+                                              <!--<tr  id="tbody_tr" >-->
+                                                <!--<td>Tiger Nixon</td>-->
+                                                <!--<td>System Architect</td>-->
+                                                <!--<td>2011/04/25</td>-->
+                                            <!--</tr>-->
+                                            <!--<tr  id="tbody_tr" >-->
+                                                <!--<td>Garrett Winters</td>-->
+                                                <!--<td>Accountant</td>-->
+                                                <!--<td>2011/07/25</td>-->
+                                            <!--</tr>-->
+                                        </tbody>
+
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer class="app-footer">
+            <div class="wrapper">
+                <span class="pull-right">2.1 <a href="#"><i class="fa fa-long-arrow-up"></i></a></span> © 2015 Copyright. More Templates</a>
+            </div>
+        </footer>
+        <div>
+    <!-- 模态框（Modal） -->
+    <div class="modal fade" id="myModal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                        &times;
+                    </button>
+                    <h4 class="modal-title1 h4" id="myModalLabel">
+                       登  陆
+                    </h4>
+                    <form class="form-horizontal" role="form">
+                        <div class="form-group">
+                            <label class="col-sm-2 control-label">账号</label>
+                            <div class="col-sm-10">
+                                <input  name="username" type="text" class="form-control form-control4"
+                                       placeholder="请输入账号">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label  class="col-sm-2   control-label">密码</label>
+                            <div class="col-sm-10">
+                                <input name="password" type="password" class="form-control form-control5"
+                                       placeholder="请输入密码">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-sm-offset-2 col-sm-10">
+                                <!--onclick="login1()"-->
+                                <button type="button" class="btn btn-default login" onclick="login1()" >登录</button>
+                                <button type="button" class="btn btn-default" data-dismiss="modal">关闭
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div><!-- /.modal-content -->
+        </div><!-- /.modal -->
+    </div>
+            <!-- 模态框2（Modal） -->
+    <div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close " data-dismiss="modal" aria-hidden="true">
+                        &times;
+                    </button>
+                    <h4 class="modal-title2 h4" >
+                        注  册
+                    </h4>
+                    <form class="form-horizontal form-horizontal1" role="form">
+                        <div class="form-group">
+                            <label   class="col-sm-2 control-label">账号</label>
+                            <div class="col-sm-10">
+                                <input name="username" type="text" class="form-control form-control1"
+                                       placeholder="请输入账号">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-sm-2 control-label">姓名</label>
+                            <div class="col-sm-10">
+                                <input name="nickname"  type="text" class="form-control form-control2"
+                                       placeholder="请输入姓名">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                        <label  class="col-sm-2 control-label">密码</label>
+                            <div class="col-sm-10">
+                                <input name="password" id="password" type="password" class="form-control form-control3"
+                                       placeholder="请输入密码">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label  class="col-sm-2 control-label">确认</label>
+                            <div class="col-sm-10">
+                                <input name="confirm_password" type="password" class="form-control form-control3"
+                                       placeholder="请确认密码">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-sm-2 control-label">邮箱</label>
+                            <div class="col-sm-10">
+                                <input  name="email" type="email" class="form-control form-control3"
+                                       placeholder="请输入邮箱">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-sm-offset-2 col-sm-10">
+                                <!--onclick="register()"-->
+                                <button type="button" class="btn btn-default register" onclick="register()" >注册</button>
+                                <button type="button" class="btn btn-default" data-dismiss="modal">关闭
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div><!-- /.modal-content -->
+        </div><!-- /.modal -->
+    </div>
+
+            <!-- Javascript Libs -->
+            <script type="text/javascript" src="../lib/js/jquery.min.js"></script>
+            <script type="text/javascript" src="../lib/js/jquerycookie.js"></script>
+            <script type="text/javascript" src="../lib/js/bootstrap.min.js"></script>
+            <script type="text/javascript" src="../lib/js/Chart.min.js"></script>
+            <script type="text/javascript" src="../lib/js/ace/jquery.validate.min.js"></script>
+            <script type="text/javascript" src="../lib/js/bootstrap-switch.min.js"></script>
+            <script type="text/javascript" src="../lib/js/jquery.matchHeight-min.js"></script>
+            <script type="text/javascript" src="../lib/js/jquery.dataTables.min.js"></script>
+            <script type="text/javascript" src="../lib/js/dataTables.bootstrap.min.js"></script>
+            <script type="text/javascript" src="../lib/js/select2.full.min.js"></script>
+            <script type="text/javascript" src="../lib/js/ace/ace.js"></script>
+            <script type="text/javascript" src="../lib/js/ace/mode-html.js"></script>
+            <script type="text/javascript" src="../lib/js/ace/theme-github.js"></script>
+            <!--<script src="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/js/bootstrap.min.js"></script>-->
+            <!-- Javascript -->
+            <script type="text/javascript" src="../js/app.js"></script>
+            <script type="text/javascript" src="../js/index.js"></script>
+
+                <!-- ziji-->
+     		<script type="text/javascript" src="../js/my.js"></script>
+            <!-- <script type="text/javascript" src="../js/jquery.js"></script> -->
+            <style>
+                .error{
+                    color:red;
+                }
+            </style>
+</body>
+
+</html>

@@ -1,0 +1,82 @@
+@CHARSET "UTF-8";
+body{
+	min-width: 946px;
+}
+.rightSide
+{width:100%;}
+.rightSide .sort
+{margin:10px 30px 10px 30px;/*border:1px solid #ddd;*/padding-bottom: 5px;}
+.rightSide .sort_title
+{height:30px;background:url(../images/index/bg.jpg);
+	font-size: 15px;
+	line-height: 30px;text-indent: 10px;font-weight: bold;color:#fff;}
+.rightSide .sort_box{
+	padding:5px 10px;}
+.rightSide .sort_box label{
+	margin: 0 10px 0 20px;}
+.rightSide .sort_box .project_name{
+	border-bottom:1px dashed #ddd;height:40px;line-height: 32px;
+	min-width: 946px;
+}
+.rightSide .sort_box .project_name input{
+	height:25px;line-height: 25px;}
+.rightSide .sort_box .sort_type{
+	border-bottom:1px dashed #ddd;height: 36px;line-height: 30px;}
+.rightSide .sort_box .sort_type > label{
+	float: left;}
+.rightSide .sort_box .sort_type ul{
+	list-style: none;float: left;}
+.rightSide .sort_box .sort_type ul li{
+	float: left;height: 30px;}
+.rightSide .sort_box .sort_submit{
+	margin-top:5px;float: right;}
+.rightSide .project_list{margin:10px 30px;}
+.rightSide .project_list .project_list_title{
+	color:#fff;letter-spacing:3px;
+	 height:30px;background:url(../images/index/bg.jpg);
+	 font-size: 15px;line-height: 30px;text-indent: 10px;margin-bottom: 20px;}
+.rightSide .project_list .project_list_title span{
+	float: right;margin-right:10px;cursor: pointer;}
+.rightSide .project_list .project_list_title span:hover{
+	text-decoration: underline;}
+.rightSide .project_list .content_list li{
+	height:30px;line-height: 30px;}
+.rightSide .project_list .content_list li span{float: right;}
+hr{margin-top:0px;}
+.dropdown{margin-top:3px;}
+.dropdown .btn_choose,.searchname-input{
+    width:160px;
+    text-align: left;
+}
+._right{
+	float: right;margin-top:6px;
+}
+.project_name label,.project_name >div {float:left;}
+/*.project_name > button{margin-left:10px;margin-top:3px;}*/
+.content_list{min-height:250px;}
+.item-search{
+	/*box-sizing: border-box;*/
+	width: 275px;
+	float: left;
+}
+.search-btn{
+    width: 80px;
+    height: 30px;
+    margin: 1px 10px 0 20px;
+    float: left;
+}
+.searchname-input{
+	border:2px solid #ddd;
+	margin-top:2px;
+	padding-left: 12px; 
+	border-radius: 4px;
+}
+.dropdown .dropdown-menu{
+	margin-left: 100px;
+}
+.btn_choose{
+	height: 26px;
+}
+.project_title{
+	line-height: 14px;
+}

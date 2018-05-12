@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+	 <meta name="description" content="">
+    <meta name="author" content="">
+	<link rel="icon" type="image/png" href="/imgs/favicon.png" sizes="16x16">
+	
+	<title>登录</title>
+	
+	<!-- Bootstrap core CSS -->
+	<link href="/css/bootstrap.css" rel="stylesheet">
+	<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <link href="/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+	<link href="/css/admin/login.css" rel="stylesheet">
+</head>
+  <body>
+	<div class="site-wrapper">
+      <div class="site-wrapper-inner">
+        <div class="cover-container">
+          <div class="masthead clearfix">
+            <div class="inner">
+              <h3 class="masthead-brand"><img src="/imgs/logo.png" alt="Logo" style="width:360px;"></img></h3>
+            </div>
+          </div>
+		  <div class="panel panel-default panel-login">
+			<div class="panel-body">
+				<form id="loginForm" action="" method="post">
+				<div class="form-group">
+				  <div class="col-sm-12">
+					  <label class="col-sm-4 control-label">用户名:</label>
+					  <input type="text" class="form-control input-lg" id="username" name="username" placeholder="帐号" aria-describedby="unHelp" autofocus validator="required">
+					<span class="help-block" id="unHelp"></span>
+				  </div>
+				</div>
+				<div class="form-group">
+				  <div class="col-sm-12">
+					  <label class="col-sm-4 control-label">密码:</label>
+					  <input type="password" class="form-control input-lg" id="password" name="password" placeholder="密码" aria-describedby="pdHelp" autofocus validator="required">
+					<span id="pdHelp" class="help-block"></span>
+				  </div>
+				</div>
+				<div class="col-sm-12" style="margin-bottom:10px;">
+					<a href="javascript:void(0);" class="btn btn-lg btn-block btn-login">登录</a>
+				</div>
+				<div class="col-sm-12" style="display: none;">
+					<a href="javascript:void(0);" class="btn btn-lg btn-block btn-reg">前往注册</a>
+				</div>
+				</form>
+			</div>
+		  </div>
+		
+        </div>
+      </div>
+    </div>
+   
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="/js/common/jquery-1.11.1.js"></script>
+    <script src="/js/common/bootstrap.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="/js/common/ie10-viewport-bug-workaround.js"></script>
+	<script src="/js/common/zo.common.js"></script>
+	<script src="js/common/jquery.base64.js"></script>
+	<script src="/js/admin/login.js"></script>
+	
+  </body>
+</html>

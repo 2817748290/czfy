@@ -1,0 +1,28 @@
+@CHARSET "UTF-8";
+.center{padding:30px 10px;padding-left:80px;padding-right: 80px;margin-bottom:80px;}
+table{border:1px solid #ddd;margin-top:50px;display: none;}
+.btn_change{display: none;}
+table td{border:1px solid #ddd;}
+td.one{min-width: 100px;text-align: center;} 
+.btn-confirm{float: left; height:28px;font-size: 15px;line-height: 10px;margin-left: 10px;}
+.dropdown{float: left;margin-left:20px; display: none;}
+.btn_choose{height:28px;font-size: 15px;line-height: 10px;width:160px;}
+label{float: left;}
+.pic_box .text{margin:10px 10px;}
+
+
+
+
+.pic_div{width:60px;height:80px;background:#fff;margin:10px auto;}
+.pic_div img{height: 100%;width: 100%;}
+.pic_box > div{position: relative;float: left;margin-right: 30px;margin-left: 30px;}
+.pic_box_file{position: absolute;opacity: 0;left:10px;width:40px;}
+.pic_box_button{width:40px;text-align: center;cursor: pointer;margin-left:10px;}
+/*.user,.place,.achievement{width:120px;line-height: 30px;}
+.user input,.place input{margin-top:40px;width:100px;}
+.intro{width: 200px;}
+.achievement input{width:100px;margin: 10px 0;}
+.other_pic > div{float: left;margin:0 30px;}
+.other_pic .pic_box_file{position: absolute;opacity: 0;left:10px;width:40px;}
+.table_search input{width:350px;}
+.btn_submit{float: right;}*/

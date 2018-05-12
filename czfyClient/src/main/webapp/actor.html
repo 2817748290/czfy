@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>民间艺人</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <script src="js/paging.js"></script>
+
+    <script src="js/jquery.js"></script>
+
+	<link rel='icon' href='css/img/favicon.ico' type='image/ico' />
+
+   <link href="css/paging.css" rel="stylesheet">
+
+	<link href="css/reset.css" rel="stylesheet">
+    <link href="css/grid.css" rel="stylesheet">
+    <link href="css/nivo.css" rel="stylesheet">
+    <link href="css/custom1.css" rel="stylesheet">
+    <link href="css/other_common.css" rel="stylesheet">
+    <link href="css/actor.css" rel="stylesheet">
+
+
+
+</head>
+
+<body>
+
+<div id="page_wrap">
+
+
+    <div class="rightSide">
+
+        <div class="top">
+			<div class="six columns">
+				<img src="images/actor/logo.png">
+		 	</div>
+		 	 <div class="two columns"></div>
+
+            <div class="three columns person">
+				<div class="avatar">
+					<img src="images/default.png">
+				</div>
+				<span class="name">
+					<a href="#" class="login"></a>
+					<a href="#" class="no_login">未登录</a>
+					<ul class="name_list">
+						<li class="pic">修改头像</li>
+						<li class="quit">退出</li>
+					</ul>
+				</span>
+				 <img src="images/name_show.png"> 
+			</div>
+		</div>
+
+
+        <div class="row choose">
+
+            <div class="twelve columns">
+                <div class="partners-carousel-title" style= "background:url(images/index/bg.jpg)" >
+                    【 筛选分类 】
+                </div>
+
+                <div class="partners-carousel-images choose_box">
+                    <div>
+                        <div class="choose_title">类别</div>
+                        <ul class="breadcrumb" id="actor_sort">
+                            <li><a href="javascript:void(0)"><b>全部</b></a></li>
+                          <li>|<a href="javascript:void(0)"> 民间文学</a></li>
+                          <li>|<a href="javascript:void(0)"> 民间戏剧</a></li>
+                          <li>|<a href="javascript:void(0)"> 民间曲艺</a></li>
+                          <li>|<a href="javascript:void(0)"> 民间音乐</a></li>
+                          <li>|<a href="javascript:void(0)"> 民间工艺美术</a></li>
+                          <li>|<a href="javascript:void(0)"> 民间舞蹈与杂技</a></li>
+                          <li>|<a href="javascript:void(0)">民间建筑艺术</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <div class="choose_title">级别</div>
+                        <ol class="breadcrumb" id="actor_classes">
+                          <li><a href="javascript:void(0)"><b>全部</b></a></li>
+                          <li>|<a href="javascript:void(0)">国家级</a></li>
+                          <li>|<a href="javascript:void(0)">省级</a></li>
+                          <li>|<a href="javascript:void(0)">市级</a></li>
+
+                        </ol>
+                    </div>
+                </div>
+  
+                <div class="partners-carousel-controls" style="background:url(images/index/bg.jpg)"></div>
+            </div>
+
+        </div>
+        <div class="row gallery" id="action-mess">
+			
+            <!-- <div class="three columns webdesing ecommerce">
+
+                <div class="portfolio-image">
+
+                    <a title="portfolio link"><img src="" class="portfolio-img" alt="portfolio picture" /></a>
+
+                    <a class="portfolio-title" title="portfolio details"></a>
+                    <a  class="portfolio-subtitle" title="portfolio details">简介</a>
+
+                    <a href="actor_mess.html?id=" class="portfolio-link" title="portfolio details"></a>
+                    <div class="background-color portfolio-bg"></div>
+
+                </div>
+
+                <a title="portfolio link"  class="portfolio-outer-title"></a>
+                <div class="portfolio-outer-subtitle color">简介</div>
+
+                <div class="text margin-tb-10 portfolio-outer-subtitle"></div>
+
+            </div> -->
+        </div>
+<div class="paging_parents">
+<!--<div class="paging">-->
+  <!--<ul class="pagination">-->
+    <!--<li><a >&laquo;</a></li>-->
+    <!--<li><a >1</a></li>-->
+    <!--<li><a >2</a></li>-->
+    <!--<li><a >3</a></li>-->
+    <!--<li><a >4</a></li>-->
+    <!--<li><a >5</a></li>-->
+    <!--<li><a >&raquo;</a></li>-->
+  <!--</ul><br>-->
+ <!--</div>-->
+</div>
+        <div class=" foot">
+			<p>風韻處州</p>
+        </div>
+
+    </div>
+
+</div>
+
+<div id="change_box">
+    <p class="pic_title">选择图片
+       <span title="关闭" id="close">X</span>
+    </p>
+    <div id="pic_container">
+      <img src="images/default.png">
+    </div>
+    <div id="pic_form">n
+      <form id="content_form">
+          <input type="hidden" name="textfiled" id="textfiled" />
+          <input type="button" name="btn" class="button" value="浏览" id="btn" />
+          <input type="file" name="file" class="file"  value="浏览"/>
+          <input type="submit" value="上传" class="button" id="submit" />
+     </form>
+    </div>
+</div>
+
+<script src="js/actor-item.js"></script>
+<script src="js/paging.js"></script>
+<script src="js/isotope.js"></script>
+
+<script src="js/caroufredsel.js"></script>
+<script src="js/nivo.js"></script>
+<script src="js/jquery.mousewheel.js"></script>
+<script src="js/tinyscrollbar.js"></script>
+<script src="js/custom1.js"></script>
+<script src="js/actor.js"></script>
+<script src="js/other_common.js"></script>
+<script>
+
+
+
+
+
+</script>
+</body>
+</html>

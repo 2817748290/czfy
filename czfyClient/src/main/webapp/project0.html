@@ -1,0 +1,182 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+  <head>
+    <base href="<%=basePath%>">
+    
+      <meta charset="utf-8">
+    <title>民间项目</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/jquery.js"></script>
+	<link rel='icon' href='css/img/favicon.ico' type='image/ico' />
+	<link rel="stylesheet" href="css/common.css">
+	<link rel="stylesheet" href="css/project.css">
+	<link rel="stylesheet" type="text/css" href="css/jquery-ui.css">
+	<link rel="stylesheet" href="css/bootstrap.css">
+
+	  <link href="css/paging.css" rel="stylesheet">
+	  <script src="js/paging.js"></script>
+	<script src="js/common.js"></script>
+	<script src="js/project.js"></script>
+	
+	<script src="js/bootstrap.js"></script>
+    <script type="text/javascript" src="js/jquery-ui.js"></script>
+    
+	<meta http-equiv="pragma" content="no-cache">
+	<meta http-equiv="cache-control" content="no-cache">
+	<meta http-equiv="expires" content="0">    
+	<meta http-equiv="keywords" content="keyword1,keyword2,keyword3">
+	<meta http-equiv="description" content="This is my page">
+
+  </head>
+  
+  <body>
+    <div class="body">
+		
+		<div class="rightSide">
+			<div class="container-fluid">
+				<div class="row  header">
+					<div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 title" >
+						<img src="images/project/logo.png">
+					</div>
+					<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6"></div>
+					<div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 person">
+						<div class="avatar">
+							<img src="images/default.png">
+						</div>
+						<span class="name">
+							<a href="#" class="login"></a>
+							<a href="#" class="no_login">未登录</a>
+							<ul class="name_list">
+								<li class="pic">修改头像</li>
+								<li class="quit">退出</li>
+							</ul>
+						</span>
+						<img src="images/name_show.png">
+					</div>
+				</div>
+				<div class="sort row">
+					<div class="sort_title">
+						信息过滤
+					</div>
+				    <div class="sort_box">
+
+<div class="project_name">
+
+	<div class="item-search">
+		<label>项目名称：</label>
+		<div class="dropdown" id="dropdown_project">
+					<span class="project_title _left"></span>
+					<input class="searchname-input" type="text" name="name" id="pro_name">
+		</div>
+	</div>
+
+	<div class="item-search">
+		<label>所属类别：</label>
+		<div class="dropdown" id="dropdown_project2">
+			<button class="btn btn_choose" data-toggle="dropdown" data-target="#dropdown_project2">
+					<span class="project_title _left"></span>
+					<span class="caret _right"></span>
+					<input type="hidden" name="category" id="type_name" value="">
+			</button>
+			<ul class="dropdown-menu">
+				<!-- 这里是js写的标签 -->
+			</ul>
+		</div>
+	</div>
+
+	<div class="item-search">
+		<label>所属级别：</label>
+
+		<div class="dropdown" id="dropdown_project3">
+			<button class="btn btn_choose" data-toggle="dropdown" data-target="#dropdown_project3"" value="">
+					<span class="project_title _left"></span>
+					<span class="caret _right"></span>
+					<input type="hidden" name="level" id="jb_name" value="">
+			</button>
+			<ul class="dropdown-menu dropdown-menu-two">
+				<li><a href="javascript:void(0)">全部</a></li>
+				<li><a href="javascript:void(0)">国家级</a></li>
+				<li><a href="javascript:void(0)">省级</a></li>
+				<li><a href="javascript:void(0)">市级</a></li>
+			</ul>
+		</div>
+	</div>
+
+	<button  class="btn btn-default search-btn">确定</button>
+</div>
+					</div>
+					</div>
+					
+				<div class="row project_list">
+					<div class="project_list_title">
+						【民间项目】
+						<span class="more">&gt;&gt;查看更多</span>
+					</div>
+				</div>
+				<div class="row project_list">
+					<ul class="content_list">
+				
+					
+						<!--<li>-->
+							<!--<i><img src="images/copy_rignt_24.png" alt=""></i>-->
+							<!--<a href="project_mess.html?aid=<%=a.getArticle_id() %>" ><%=a.getName() %></a>-->
+							<!--<span>[2015/5/22]</span>-->
+						<!--</li>-->
+					
+				
+				<!-- <div class="row btn_list">
+					<ul class="pagination" style="margin:0;">
+					  <li><a href="#">&laquo;</a></li>
+					  <li class="active"><a href="#">1</a></li>
+					  <li><a href="#">2</a></li>
+					  <li><a href="#">3</a></li>
+					  <li><a href="#">4</a></li>
+					  <li><a href="#">5</a></li>
+					  <li><a href="#">&raquo;</a></li>
+					</ul>
+				</div> -->
+				 </ul>
+				</div>
+
+				<div class="paging_parents">
+					<!--<div class="paging">-->
+					<!--<ul class="pagination">-->
+					<!--<li><a >&laquo;</a></li>-->
+					<!--<li><a >1</a></li>-->
+					<!--<li><a >2</a></li>-->
+					<!--<li><a >3</a></li>-->
+					<!--<li><a >4</a></li>-->
+					<!--<li><a >5</a></li>-->
+					<!--<li><a >&raquo;</a></li>-->
+					<!--</ul><br>-->
+					<!--</div>-->
+				</div>
+
+				<div class="row  footer" style="padding:0">
+					<p>
+						風韻處州
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+    
+    
+	<div id="change_box">
+	    <p class="pic_title">选择图片
+	       <span title="关闭" id="close">X</span>
+	    </p>
+	    <div id="pic_container">
+	      <img src="images/default.png">
+	    </div>
+	    <div id="pic_form">
+	      <form id="content_form">
+	          <input type="hidden" name="textfiled" id="textfiled" />
+	          <input type="button" name="btn" class="button" value="浏览" id="btn" />
+	          <input type="file" name="file" class="file"  value="浏览"/>
+	          <input type="submit" value="上传" class="button" id="submit" />
+	     </form>
+	    </div>
+	</div>
+  </body>
+</html>

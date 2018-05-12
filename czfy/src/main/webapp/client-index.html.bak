@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+	<link rel="icon" type="image/png" href="imgs/favicon2.png" sizes="16x16">
+    <title>智能仓储系统</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+
+    <!-- Add custom CSS here -->
+    <link href="css/client/sb-admin.css" rel="stylesheet">
+   	<link href="css/client/common.css" rel="stylesheet">
+    <link href="css/client/jquery-ui.css" rel="stylesheet">
+    <link href="css/client/index.css" rel="stylesheet">
+    
+  </head>
+
+  <body>
+
+    <div id="wrapper">
+
+      <!-- Sidebar -->
+      <nav class="navbar-inverse">
+        <!-- Brand and toggle get grouped for better mobile display -->
+         <a class="navbar-brand" href="index.html"><img src="imgs/top_logo.jpg"/></a>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse navbar-ex1-collapse">
+          <ul class="nav navbar-nav side-nav">
+           <li class="dropdown">
+              <a  class="dropdown-toggle" data-toggle="dropdown"><i class="icon-signin"></i> 入库管理 <b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li><a id="warehousing"> 入&nbsp;&nbsp;&nbsp;&nbsp;库</a></li>
+                <li><a id="warehousingOrderQuery"> 入库单查询</a></li>
+                <li><a id="warehousingStatistics"> 入库统计</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a class="dropdown-toggle" data-toggle="dropdown"><i class="icon-truck"></i> 出库管理 <b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li><a id="delivery"> 出&nbsp;&nbsp;&nbsp;&nbsp;库</a></li>
+                <li><a id="deliveryQuery"> 出库单查询</a></li>
+                <li><a id="deliveryStatistics"> 出库统计</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a class="dropdown-toggle" data-toggle="dropdown"><i class="icon-dropbox"></i> 货物管理 <b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li><a id="checkQuery"> 盘&nbsp;&nbsp;&nbsp;&nbsp;点</a></li>
+                <li><a id="positionQuery"> 定位查询</a></li>
+                <li><a id="goodsQuery"> 货物查询</a></li>
+                <li><a id="movementQuery"> 移动记录</a></li>
+                <li><a id="lostQuery"> 缺失记录</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a class="dropdown-toggle" data-toggle="dropdown"><i class="icon-home"></i> 仓库管理 <b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li><a id="warehouseState"> 仓库实况</a></li>
+              </ul>
+            </li>
+          </ul>
+
+          
+        </div><!-- /.navbar-collapse -->
+      </nav>
+
+		
+		<div class="body">
+		<div>
+			<div class="container-fluid">
+			 	<div class="row actor">
+				 	<div>
+				 		<span class="title">【 民间艺人 】</span>
+				 		<span class="more" data-title="actor">
+							<a href="doactor.jsp">查看更多</a>
+						</span>
+				 	</div>
+			 	</div>
+			 	<hr>
+			 	<div class="row actor_list">
+					<div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+						<div class="actor_avatar">
+							<a href="doactor_mess.jsp?id=<%=a0.getImage_id() %>"><img src="<%=a0.getAbout() %>"></a>
+						</div>
+						<p><%=a0.getImg_name() %></p>
+					</div>
+					
+					
+			       <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+						<div class="actor_avatar">
+							<a href="doactor_mess.jsp?id=<%=a1.getImage_id() %>"><img src="<%=a1.getAbout() %>"></a>
+						</div>
+						<p><%=a1.getImg_name() %></p>
+					</div>
+					
+					
+					<div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+						<div class="actor_avatar">
+							<a href="doactor_mess.jsp?id=<%=a2.getImage_id() %>"><img src="<%=a2.getAbout() %>"></a>
+						</div>
+						<p><%=a2.getImg_name() %></p>
+						
+					</div>
+					
+					
+					<div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+						<div class="actor_avatar">
+							<a href="doactor_mess.jsp?id=<%=a3.getImage_id() %>"><img src="<%=a3.getAbout() %>"></a>
+						</div>
+						<p><%=a3.getImg_name() %></p>
+					</div>
+				
+				</div>
+				<hr>
+				<div class="row project">
+				 	<div>
+				 		<span class="title">【 民间项目 】</span>
+				 		<span class="more" data-title="project">
+				 			<a href="doproject0.jsp">查看更多</a>
+				 		</span>
+				 	</div>
+			 	</div>
+			 	<hr>
+			 	<%request.setCharacterEncoding("utf-8");
+				ArrayList<Article> artiList1 = (ArrayList<Article>) request.getAttribute("at");
+				Article t0 = artiList1.get(6);
+				Article t1 = artiList1.get(7);
+				Article t2 = artiList1.get(4);
+				Article t3 = artiList1.get(1);
+				 %>
+			 	<div class="row project_list">
+					<div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+						<div class="project_avatar">
+						<a href="doproject_mess.jsp?aid=<%=t0.getArticle_id() %>" >
+							<img src="projectimage/jlyzjdys (1).jpg"></a>
+						</div>
+						<p><%=t0.getName() %></p>
+					</div>
+					<div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+						<div class="project_avatar">
+						<a href="doproject_mess.jsp?aid=<%=t1.getArticle_id() %>" >
+							<img src="projectimage/jlyzsg (1).jpg"></a>
+						</div>
+						<p><%=t1.getName() %></p>
+					</div>
+					<div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+						<div class="project_avatar">
+						<a href="doproject_mess.jsp?aid=<%=t2.getArticle_id() %>" >
+							<img src="projectimage/jygcw (1).jpg"></a>
+						</div>
+						<p><%=t2.getName() %></p>
+					</div>
+					<div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+						<div class="project_avatar">
+						<a href="doproject_mess.jsp?aid=<%=t3.getArticle_id() %>" >
+							<img src="projectimage/jyjz1.jpg"></a>
+						</div>
+						<p><%=t3.getName() %></p>
+					</div>
+				</div>
+				<hr>
+				<div class="row artical">
+					<div>
+				 		<span class="title">【 研究文献 】</span>
+				 		<span class="more" data-title="artical">
+				 			<a href="artical.jsp">查看更多</a>
+				 		</span>
+				 	</div>
+				</div>
+				<hr>
+				<div class="row artical_list">
+					<div class="col-lg-1 col-md-1 col-sm-1 col-xs-1"></div>
+					<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 read_pic">
+						<div id="myCarousel" class="carousel slide" data-ride="carousel">
+							<ol class="carousel-indicators">
+								<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+								<li data-target="#myCarousel" data-slide-to="1"></li>
+								<li data-target="#myCarousel" data-slide-to="2"></li>
+							</ol>
+							<div class="carousel-inner">
+								<div class="item active">
+									<img src="projectimage/jlyzsg (2).jpg" alt="第一张">
+								</div>
+								<div class="item">
+									<img src="projectimage/jygcw (5).jpg" alt="第二张">
+								</div>
+								<div class="item">
+									<img src="projectimage/jygjhddd (5).jpg" alt="第三张">
+								</div>
+							</div>
+						</div>
+					</div>
+					
+					<div class="col-lg-7 col-md-7 col-sm-7 col-xs-7 topic_list">
+						<ul>
+							<li>
+								<i><img src="images/artical/pdf.png"></i>
+								<a href="html/shichanglainer.pdf" target="_blank">视唱练声对声乐技巧的作用和影响研究.pdf</a>
+							</li>
+							<li>
+								<i><img src="images/artical/pdf.png"></i>
+								<a href="html/2030chain.pdf" target="_blank">20世纪30年代中国声乐艺术叙事与评价.pdf</a>
+							</li>
+							<li>
+								<i><img src="images/artical/pdf.png"></i>
+								<a href="html/251256558.pdf" target="_blank">二都戏的田野调查研究.pdf</a>
+							</li>
+							<li>
+								<i><img src="images/artical/pdf.png"></i>
+								<a href="html/2512544255.pdf" target="_blank">通济堰的浓浓民俗情.pdf</a>
+							</li>
+							<li>
+								<i><img src="images/artical/pdf.png"></i>
+								<a href="html/3026525424 .pdf" target="_blank">二都戏的音乐形态及其演变.pdf</a>
+							</li>
+							<li>
+								<i><img src="images/artical/pdf.png"></i>
+								<a href="html/7777777777777.pdf" target="_blank">论音乐表演与教学中音乐的二度创作.pdf</a>
+							</li>
+						</ul>
+					</div>
+					
+				</div>
+				<hr>
+				<div class="row new">
+					<div>
+				 		<span class="title">【 民间新闻 】</span>
+				 		<span class="more" data-title="new">
+				 			<a href="new.jsp">查看更多</a>
+				 		</span>
+				 	</div>
+				</div>
+				<hr>
+				<div class="content row  new_list">
+					<div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+						<div class="thumbnail">
+						  <img src="photosart/zjsx (10).JPG">
+						  <div class="caption">
+				              <p>走进畲乡</p>
+				          </div>
+				          <div class="num"><span>11</span>张</div>
+						</div>
+					</div>
+					<div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+						<div class="thumbnail">
+						  <img src="photosart/yyxls (3).jpg">
+						  <div class="caption">
+				              <p>音乐系历史</p>
+				          </div>
+				          <div class="num"><span>4</span>张</div>
+						</div>					
+					</div>
+					<div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+						<div class="thumbnail">
+						  <img src="photosart/yjsg (4).jpg">
+						  <div class="caption">
+				              <p>研究硕果</p>
+				          </div>
+				          <div class="num"><span>8</span>张</div>
+						</div>
+					</div>
+					<div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+						<div class="thumbnail">
+						  <img src="photosart/xxjl (3).jpg">
+						  <div class="caption">
+				              <p>学习交流</p>
+				          </div>
+				          <div class="num"><span>4</span>张</div>
+						</div>
+					</div>
+				</div>
+				<hr>
+				<div class="row video">
+					<div>
+				 		<span class="title">【 民俗视频 】</span>
+				 		<span class="more" data-title="movie">
+				 			<a href="movie.jsp">查看更多</a>
+				 		</span>
+				 	</div>
+				</div>
+				<hr>
+				<div class="row movie_list">
+					<div class="col-lg-3 col-md-3 col-sm-3 col-xs-3" data-address="video/date.mp4" data-avatar="images/0.jpg" data-time="2016-08-06 00:00">
+						<div class="movie_avatar">
+							<img src="video/12.jpg">
+						</div>
+						<div class="cover">
+							<img src="images/cover.png" alt="">
+						</div>
+						<p data-title="美好的文化美好的文化美好的文化美好的文化">&nbsp;第三届中国刘基文化节暨生态旅游节开幕式“印象文成”文艺晚会</p>
+					</div>
+					<div class="col-lg-3 col-md-3 col-sm-3 col-xs-3" data-address="video/sctxzwh.mp4" data-avatar="images/1.jpg" data-time="2016-08-06 00:00">
+						<div class="movie_avatar">
+							<img src="video/1.jpg">
+						</div>
+						<div class="cover">
+							<img src="images/cover.png" alt="">
+						</div>
+						<p data-title="美好的文化美好的文化美好的文化美好的文化">&nbsp;松阳高腔 国家级非物质文化遗产 张玉娘</p>
+					</div>
+					<div class="col-lg-3 col-md-3 col-sm-3 col-xs-3" data-address="video/date.mp4" data-avatar="images/2.jpg" data-time="2016-08-06 00:00">
+						<div class="movie_avatar">
+							<img src="video/11.jpg">
+						</div>
+						<div class="cover">
+							<img src="images/cover.png" alt="">
+						</div>
+						<p data-title="美好的文化美好的文化美">&nbsp;遂昌大讲客第十四期 探秘黑陶</p>
+					</div>
+					<div class="col-lg-3 col-md-3 col-sm-3 col-xs-3" data-address="video/date.mp4" data-avatar="images/1.jpg" data-time="2016-08-06 00:00">
+						<div class="movie_avatar">
+							<img src="video/5.jpg">
+						</div>
+						<div class="cover">
+							<img src="images/cover.png" alt="">
+						</div>
+						<p data-title="美好的文化美好的文化美好的文化美好的文化的文化美好的文化">&nbsp;浙江电视台《休闲江南》栏目----2012中国遂昌汤显祖文化节</p>
+					</div>
+				</div>
+			 	<div class="row footer">
+			 		<p>風韻處州</p>
+			 	</div>
+			</div>
+		</div>
+	</div>
+  
+	<div id="pan"></div>
+	<div id="show_list">
+		<div id="show">
+			<div class="showImage">
+	
+			</div>
+		</div>
+		
+	</div>
+	
+	
+	<span id="next"><p>&gt;</p></span>
+	<span id="prev"><p>&lt;</p></span>
+	
+	<div id="change_box">
+	    <p class="pic_title">选择图片
+	       <span title="关闭" id="close">X</span>
+	    </p>
+	    <div id="pic_container">
+	      <img src="images/default.png">
+	    </div>
+	    <div id="pic_form">
+	      <form id="content_form">
+	          <input type="hidden" name="textfiled" id="textfiled" />
+	          <input type="button" name="btn" class="button" value="浏览" id="btn" />
+	          <input type="file" name="file" class="file"  value="浏览"/>
+	          <input type="submit" value="上传" class="button" id="submit" />
+	     </form>
+	    </div>
+	</div>
+		
+		
+		
+    </div><!-- /#wrapper -->
+
+    <!-- JavaScript -->
+    
+    <script src="js/common/jquery-1.11.1.js"></script>
+    <script src="js/common/bootstrap.js"></script>
+	<script src="js/common/zo.common.js"></script>
+	<script src="js/index.js"></script>
+  </body>
+</html>

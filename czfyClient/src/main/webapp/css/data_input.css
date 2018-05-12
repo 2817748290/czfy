@@ -1,0 +1,15 @@
+@CHARSET "UTF-8";
+.center{margin-top:30px;padding:0 200px;}
+table tr td {border:1px solid #ddd;}
+.btn_submit{margin-left:200px;width:200px;}
+.pic_file{margin-bottom: 10px;}
+.pic_div{width:150px;height:200px;background:#fff;margin:10px auto;}
+.pic_div img{height: 100%;width: 100%;}
+.pic_box{position: relative;}
+.pic_box_file{position: absolute;opacity: 0;left:50px;width:70px;filter:alpha(opacity:0);}
+.pic_box_button{margin-left:50px;width:60px;text-align: center;}
+.succ input{margin-right: 10px;margin-bottom: 10px;}
+.succ span{display: inline-block;height:30px;width: 30px;background:#fff;border-radius:15px;text-align: center;line-height: 30px;cursor: pointer;}
+
+.actor tr > td{width: 80px;}
+.other_pic span{display: inline-block;height:30px;line-height: 30px;text-align: center;width:80px;border-radius:10px;background: #fff;cursor: pointer;}

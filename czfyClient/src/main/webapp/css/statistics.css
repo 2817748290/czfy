@@ -1,0 +1,5 @@
+@CHARSET "UTF-8";
+.center{padding:30px 80px;}
+.table_title{padding:10px 80px 0 80px;}
+table{border:1px solid #ddd;margin-top:-15px;}
+table td{border:1px solid #ddd;text-align: center;}

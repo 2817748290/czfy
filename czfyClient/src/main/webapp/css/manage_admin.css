@@ -1,0 +1,21 @@
+@CHARSET "UTF-8";
+*{padding:0;margin:0;list-style: none;}
+body{font-family: '΢���ź�';}   
+.leftSide{background: #ddd;width:250px;float: left; position: relative;height:100%;}
+.leftSide header img{height:100px;width: 100%;margin-top:20px;}
+.leftSide nav{width:100%;margin-top: 20px;}
+.leftSide nav > ul > li{position: relative;overflow: hidden;height:50px;}
+.leftSide nav > ul > li .bg-color{background: #66cccc;position: absolute;height:100%;}
+.leftSide nav > ul > li .content{position:absolute;left:35px;top:7px;cursor:pointer;}
+.leftSide nav > ul > li .content img{width:35px;height:35px;float: left;}
+.leftSide nav > ul > li .content span{float: left;display: block;width:130px;height:35px;line-height: 35px;text-indent: 10px;font-size: 18px;font-weight: 700;}
+.leftSide nav > ul > li .list_icon{display: none;}
+.leftSide nav > ul > .list{background:  #66cccc;padding-bottom:5px;display: none;}
+.leftSide nav > ul > .list li{margin-left:80px;height:15px;line-height: 15px;font-size:14px;margin-bottom: 8px;cursor: pointer;font-family: '΢���ź�';}
+.leftSide nav > ul > .list li:hover{text-shadow:0px 2px 2px #666;}
+.leftSide .search{position: absolute; bottom:10px;left: 10px;}
+
+.leftSide nav > ul > .manage_list{background:  #66cccc;padding-bottom:5px;display: none;}
+.leftSide nav > ul > .manage_list li{margin-left:80px;height:15px;line-height: 15px;font-size:14px;margin-bottom: 8px;cursor: pointer;font-family: '微软雅黑';}
+.leftSide nav > ul > .manage_list li:hover{text-shadow:0px 2px 2px #666;}
+.glyphicon{line-height: 20px;}

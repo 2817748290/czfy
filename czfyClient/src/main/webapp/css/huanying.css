@@ -1,0 +1,15 @@
+@CHARSET "UTF-8";
+*{margin:0;padding:0;}
+.box{min-width: 1000px;}
+.left img,.right img{height:100%;}
+.img_list{margin-top:18%;height:267px;padding-left:30px;}
+.img_list img.pic{width:69px;height:267px;margin-right:100px;}
+.right img{float: right;}
+.icon{margin-top:3%;}
+ #pic{margin-top: 30px;}
+
+/*.center .img_list{margin:100px auto 50px auto;width:660px;}
+.center .img_list img{margin-left:80px;}
+.center .icon{margin:0px auto;height:100px;width: 480px;border:1px solid #000;}
+.center .icon img{height: 100%;}*/
+

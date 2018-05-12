@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="czfyClient:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <root id="archive" name="czfyClient.war">
+      <element id="artifact" artifact-name="czfyClient:war exploded" />
+    </root>
+  </artifact>
+</component>

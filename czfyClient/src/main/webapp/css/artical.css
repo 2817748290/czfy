@@ -1,0 +1,9 @@
+@CHARSET "UTF-8";
+.rightSide{width:100%;}
+.actor{background:url(../images/index/bg.jpg);color:#fff; height:30px;line-height:30px;font-weight: 500;font-size: 15px;margin:0;padding-left: 30px;}
+.artical_list{margin-top:20px;}
+.center{height:250px;}
+i img{height:16px;width:16px;}
+.read_pic{height:200px;}
+.read_pic img{width: 100%;margin:10px 0;height:100%;}
+.artical_list ul li{height:25px;line-height: 25px;overflow: hidden; white-space: nowrap;text-overflow:ellipsis;}

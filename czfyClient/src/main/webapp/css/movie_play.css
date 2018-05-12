@@ -1,0 +1,24 @@
+@CHARSET "UTF-8";
+.video{margin-top: 40px;}
+.video_box{height: 500px;}
+.video_message{height: 500px;background:#e1e1e1;}
+.video_message .author{width: 100%;}
+.video_message .author img{width:80px;height:80px;border-radius: 40px;margin-top:50px;margin-left: 30%;}
+.video_message .data{padding-top:30px;}
+.video_message .data p{height:25px;line-height: 25px;}
+.video_message .data p label{width: 80px;font-size: 15px;float: left;}
+.video_message .data p span{display: block;font-size: 13px;float: left;}
+.video_message .data p span.video_txt{text-indent: 26px;}
+.header .title span{font-size: 14px;}
+.hr{margin-top:60px;}
+.media-left img{width:50px;height:50px;}
+.media .media-body h4{font-size: 15px;height:30px;line-height: 30px;}
+.media .media-body h4 span{color:blue;letter-spacing: 2px;}
+.media .media-body h5{font-size: 13px;height: 20px;line-height: 20px;margin:-5px 0 0 0;}
+
+.media .media-body img{width: 20px;height: 20px;margin-left:15px;cursor: pointer;}
+.media .media-body .comment_text, .movie_comment{height:100px;background: #e1e1e1;border-radius: 3px;padding:10px 5px 10px 5px;display: none;}
+.movie_comment{display: block;margin-bottom: 50px;}
+.media .media-body .comment_text .comment_box, .movie_comment .movie_box{height:40px;background: #fff;margin-bottom: 10px;}
+.media .media-body .comment_text .comment_btn, .movie_comment .movie_btn{width:60px;height: 30px;line-height: 30px;background: orange;border-radius: 8px;text-align: center;letter-spacing: 3px;float: right;margin-right: 2%;cursor:pointer;}
+.rightSide .btn_list{margin-left: 35%;margin-top:50px;margin-bottom: 10px;}

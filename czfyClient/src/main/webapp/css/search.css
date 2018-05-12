@@ -1,0 +1,11 @@
+@CHARSET "UTF-8";
+.search_list{color:#666;}
+.actor_list,.project_list,.movie_list{margin-top:20px;}
+.actor_list > div,.project_list > div,.movie_list > div{cursor: pointer;}
+.actor_list p,.project_list p{text-align: center;height: 25px;line-height: 25px;font-size: 14px;font-family: '微软雅黑';}
+.actor_avatar img,.project_avatar img,.movie_avatar img{width: 100%;}
+.movie_list p{height: 25px;line-height: 25px;font-size: 14px;font-family: '微软雅黑';}
+.movie_list p:hover{text-decoration: underline;color:blue;}
+.movie_list span{letter-spacing: 2px;}
+.movie_list > div{position: relative;}
+.cover{background: #000;opacity: 0.5;position: absolute;top:0;display: none;}

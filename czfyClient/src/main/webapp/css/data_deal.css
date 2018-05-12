@@ -1,0 +1,11 @@
+@CHARSET "UTF-8";
+.center{padding:30px 100px;min-height: 550px;}
+table{border:1px solid #ddd;}
+table td{border:1px solid #ddd;text-align: center;}
+.table_btn td{cursor: pointer;}
+.table_search input{text-indent: 5px;font-size: 12px;}
+.error{width: 600px;text-indent: 28px;text-align: left;}
+.mistake .table_search input{width: 400px;}
+
+
+

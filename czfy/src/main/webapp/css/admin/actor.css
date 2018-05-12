@@ -1,0 +1,26 @@
+ textarea {
+	resize: none;
+}
+
+a,
+a:focus,
+a:hover {
+  cursor:pointer;
+}
+
+ table td{
+ 	text-decoration: underline;
+ 	color: #428bca;
+ 	cursor: pointer;
+ }
+
+ .pass{
+	 vertical-align: -3px;
+	 width:15px;
+	 height:15px;
+ }
+ .text-pass{
+	 padding: 0 1px;
+	 color: #13cc81;
+	 font-size: 12px;
+ }

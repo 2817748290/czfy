@@ -1,0 +1,29 @@
+@CHARSET "UTF-8";
+*{margin:0;padding:0;}
+body{background: url(../images/bg.jpg);}
+.head{width:900px;height:100px;margin:10px auto 10px auto;padding:0 50px 5px 50px;
+	  border-bottom:1px solid #ddd;}
+.head span{float:right;font-size:20px;line-height: 100px;}
+.head .logo{width:310px;float: left;}
+.head .logo img{width:200px;height: 100px;float: left;}
+.head .logo span{letter-spacing: 3px;display: block;height: 40px;border-left:1px solid #999;
+				line-height: 40px;margin-top:30px;padding-left:10px;}
+.head span a{text-decoration: none;}
+.head span a:hover{text-decoration: underline;}
+.reg_box{width:900px;margin:0 auto;padding:10px;}
+.reg_box .reg{width:500px;overflow-y:hidden;margin:0 auto; }
+
+.reg_box .reg p{margin-bottom:20px;height:25px;}
+.reg_box .reg p label{font-size: 14px;color: #666;width:80px;display: block;float: left;line-height: 25px;}
+.reg_box .reg p span.star{color: red;float: left;width:15px;display: block;height: 25px;}
+.reg_box .reg p label.error{color: red;font-size: 12px;}
+.reg_box .reg .text{border-radius:4px;border:1px solid #ccc;background: #fff;width: 300px;height:25px;
+					line-height: 20px;text-indent: 5px;color:#666;float: left;}
+/*.reg_box .reg .btn{box-shadow:none;height: 30px;width:380px;text-align: center;line-height: 30px;border-radius:5px;
+                   margin-top:20px;background:#f9f1f2;outline: none;font-weight:700;text-shadow:0 1px 2px rgba(0,0,0,.1);}*/
+/*.reg_box .reg .btn:focus{outline:none;box-shadow:0 2px 3px 0 rgba(0,0,0,.1) inset,0 2px 7px 0 rgba(0,0,0,.2)}*/
+.reg_box .reg .btn{box-shadow:none;cursor:pointer;width:380px;height:35px;background:#f9f1f2;border:1px solid #ff730e;border-radius:6px;font-weight:700;
+	  color:#666;font-size:18px;letter-spacing:15px;text-shadow:0 1px 2px rgba(0,0,0,.1);line-height: 35px;margin-top:10px;margin-left: 15px;}
+.reg_box .reg .btn:focus{outline:none;box-shadow:0 2px 3px 0 rgba(0,0,0,.1) inset,0 2px 7px 0 rgba(0,0,0,.2)}
+.reg_box .reg .btn:hover{box-shadow:0 15px 30px 0 rgba(255,255,255,.15) inset,0 2px 7px 0 rgba(0,0,0,.2);}
+

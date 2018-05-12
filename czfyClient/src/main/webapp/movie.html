@@ -1,0 +1,146 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+  <head>
+    <base href="<%=basePath%>">
+    
+     <meta charset="utf-8">
+    <title>民俗视频</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/jquery.js"></script>
+	<link rel='icon' href='css/img/favicon.ico' type='image/ico' />
+	<link rel="stylesheet" href="css/common.css">
+	<link rel="stylesheet" href="css/movie.css">
+	<link rel="stylesheet" type="text/css" href="css/jquery-ui.css">
+	<link rel="stylesheet" href="css/bootstrap.css">
+	  <link href="css/paging.css" rel="stylesheet">
+
+	  <script src="js/paging.js"></script>
+
+	<script src="js/common.js"></script>
+	<script src="js/movie.js"></script>
+	<script src="js/bootstrap.js"></script>
+    <script type="text/javascript" src="js/jquery-ui.js"></script>
+    
+	<meta http-equiv="pragma" content="no-cache">
+	<meta http-equiv="cache-control" content="no-cache">
+	<meta http-equiv="expires" content="0">    
+	<meta http-equiv="keywords" content="keyword1,keyword2,keyword3">
+	<meta http-equiv="description" content="This is my page">
+
+	<!--<link rel="stylesheet" type="text/css" href="styles.css">-->
+
+
+  </head>
+  
+  <body>
+    <div class="body">
+
+		<div class="rightSide">
+			<div class="container-fluid">
+				<div class="row  header">
+
+					<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 title" >
+						<img src="images/movie/logo.png">
+					</div>
+					<div class="col-lg-7 col-md-7 col-sm-7 col-xs-7"></div>
+					<div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 person">
+						<div class="avatar">
+							<img src="images/default.png">
+						</div>
+						<span class="name">
+							<a href="#" class="login">zjswh</a>
+							<a href="#" class="no_login">未登录</a>
+							<ul class="name_list">
+								<li class="pic">修改头像</li>
+								<li class="quit">退出</li>
+							</ul>
+						</span>
+						<img src="images/name_show.png">
+						
+					</div>
+				</div>
+				<div class="sort row">
+					<div class="sort_title">
+						查找
+					</div>
+					<div class="item-search">
+						<label>项目名称：</label>
+						<div class="dropdown">
+							<input class="searchname-input" type="text" name="name" id="pro_name">
+						</div>
+						<button  class="search-button">确定</button>
+					</div>
+					<div class="project_list_title">
+						【视频列表】
+						<span class="more">&gt;&gt;查看更多</span>
+					</div>
+
+				<div class="row movie_list">
+					<!-- <div class="box">
+
+						<div class="movie" data-address="video/date.mp4" data-avatar="images/1.jpg" data-time="2016-08-06 00:00">
+							<img src="<%=a.getLocation() %>" alt="">
+							<div class="time_length">3:06</div>
+							<div class="text">
+								<p data-title="美好的文化美好的文化美好的文化"><%=a.getAbout() %></p>
+							</div>
+							<div class="text_btn">
+									<div class="playNum">
+									 	<i></i>
+										<span></span>
+									</div>
+									<div class="comment">
+										<i></i>
+										<span></span>
+									</div>
+							</div>
+						</div>
+
+					</div> -->
+					
+					
+				</div>
+
+				<div class="paging_parents">
+					<!--<div class="paging">-->
+					<!--<ul class="pagination">-->
+					<!--<li><a >&laquo;</a></li>-->
+					<!--<li><a >1</a></li>-->
+					<!--<li><a >2</a></li>-->
+					<!--<li><a >3</a></li>-->
+					<!--<li><a >4</a></li>-->
+					<!--<li><a >5</a></li>-->
+					<!--<li><a >&raquo;</a></li>-->
+					<!--</ul><br>-->
+					<!--</div>-->
+				</div>
+
+				<div class="row  footer" style="padding:0">
+					<p>
+						風韻處州
+					</p>
+				</div>
+			</div>
+			</div>
+		</div>
+    
+	
+		<div id="change_box">
+	    <p class="pic_title">选择图片
+	       <span title="关闭" id="close">X</span>
+	    </p>
+	    <div id="pic_container">
+	      <img src="images/default.png">
+	    </div>
+	    <div id="pic_form">
+	      <form id="content_form">
+	          <input type="hidden" name="textfiled" id="textfiled" />
+	          <input type="button" name="btn" class="button" value="浏览" id="btn" />
+	          <input type="file" name="file" class="file"  value="浏览"/>
+	          <input type="submit" value="上传" class="button" id="submit" />
+	     </form>
+	    </div>
+	</div>
+	</div>
+  </body>
+</html>
